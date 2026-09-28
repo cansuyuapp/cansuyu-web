@@ -10,9 +10,7 @@ function closeMenu() {
   menuButton.setAttribute('aria-expanded', 'false');
   menuButton.setAttribute('aria-label', 'Menüyü aç');
 }
-function showView() {
-  if (location.hash === '#icerik') return;
-  const active = normalizeView(location.hash);
+function showView(active = normalizeView(location.hash)) {
   viewElements.forEach((element, key) => { element.hidden = key !== active; });
   navLinks.forEach(link => {
     const selected = link.dataset.nav === active;
@@ -33,7 +31,23 @@ menuButton.addEventListener('click', () => {
   menuButton.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
 });
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
-window.addEventListener('hashchange', showView);
+// Show the selected section while keeping the browser address clean.
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', event => {
+    const target = link.getAttribute('href').slice(1);
+    if (target === 'icerik') {
+      event.preventDefault();
+      document.getElementById('icerik').focus();
+    } else if (VIEWS.includes(target)) {
+      event.preventDefault();
+      showView(target);
+    }
+  });
+});
+window.addEventListener('hashchange', () => {
+  showView(normalizeView(location.hash));
+  history.replaceState(null, '', location.pathname + location.search);
+});
 
 const tabs = [...document.querySelectorAll('[data-app-tab]')];
 function selectTab(tab) {
@@ -189,3 +203,4 @@ document.getElementById('gallery-close').addEventListener('click', () => gallery
 gallery.addEventListener('click', event => { if (event.target === gallery) gallery.close(); });
 document.getElementById('year').textContent = String(new Date().getFullYear());
 showView();
+if (location.hash) history.replaceState(null, '', location.pathname + location.search);
