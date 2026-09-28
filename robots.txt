@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cansuyuapp.com.tr/sitemap.xml

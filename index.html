@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff8e7">
+<meta name="description" content="Can Suyu: derslerini planla, Pomodoro ile odaklan, mini oyunlarla mola ver ve kendi çiftliğini büyüt. Android uygulaması yakında.">
+<meta property="og:title" content="Can Suyu · Çalıştıkça dünya renklenir">
+<meta property="og:description" content="Planın bir yol, emeğin bir bahçe olsun. Can Suyu'nu keşfet.">
+<meta property="og:image" content="https://cansuyuapp.com.tr/media/bahce.webp">
+<link rel="canonical" href="https://cansuyuapp.com.tr/">
+<link rel="icon" href="./media/simge.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
+<title>Can Suyu · Çalıştıkça dünya renklenir</title>
+</head>
+<body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
+<div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="brand" href="#anasayfa" data-nav="anasayfa" aria-label="Can Suyu ana sayfa"><span class="brand-drop">💧</span><span>can<span>suyu</span><small>Çalıştıkça yeşer.</small></span></a>
+  <nav class="desktop-nav" aria-label="Site bölümleri">
+    <a href="#anasayfa" data-nav="anasayfa">Ana sayfa</a><a href="#uygulama" data-nav="uygulama">Uygulama</a><a href="#ciftlik" data-nav="ciftlik">Çiftlik</a><a href="#oyunlar" data-nav="oyunlar">Mini oyunlar</a><a href="#iletisim" data-nav="iletisim">İletişim</a>
+  </nav>
+  <a class="header-store" href="#indir" data-nav="indir"><span aria-hidden="true">▶</span><span>Google Play <small>YAKINDA</small></span></a>
+  <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Menüyü aç" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobil menü" hidden>
+ <a href="#anasayfa" data-nav="anasayfa">🏡 Ana sayfa</a><a href="#uygulama" data-nav="uygulama">📚 Uygulama</a><a href="#ciftlik" data-nav="ciftlik">🌳 Çiftlik</a><a href="#oyunlar" data-nav="oyunlar">🎮 Mini oyunlar</a><a href="#iletisim" data-nav="iletisim">💬 İletişim</a><a href="#indir" data-nav="indir">▶ Google Play</a>
+</nav>
+<main id="icerik">
+<section class="view home-view" data-view="anasayfa" aria-labelledby="home-title">
+ <div class="home-grid">
+  <div class="home-copy">
+   <span class="pill pill-sun"><span class="pulse-dot"></span> GÜNÜNÜN EN GÜZEL YERİ BURASI</span>
+   <h1 id="home-title">Biraz <span class="squiggle">odak.</span><br>Bolca <span class="pink-text">hayat!</span><span class="spark" aria-hidden="true">✳</span></h1>
+   <p>Planladığın her ders, tamamladığın her oturum, sana ait bir çiftlikte yeni bir başlangıca dönüşsün. Çalışmak hiç bu kadar renkli görünmemişti.</p>
+   <div class="home-actions"><a class="btn btn-dark" href="#uygulama">Hadi keşfedelim <span aria-hidden="true">↗</span></a><a class="round-link" href="#oyunlar"><span>🎮</span> Mini oyunlara bak</a></div>
+   <div class="home-proof"><span>☀️ Kendi programın</span><span>🧡 Kendi hızın</span><span>🌱 Kendi çiftliğin</span></div>
+  </div>
+  <div class="home-art" aria-label="Can Suyu dünyasından çizimli önizleme">
+   <div class="sunburst" aria-hidden="true"></div><div class="scribble s-one" aria-hidden="true">✦</div><div class="scribble s-two" aria-hidden="true">✿</div>
+   <div class="art-card card-plan"><span class="card-kicker">BUGÜNÜN PLANI</span><strong>Bir adım daha! <span>✓</span></strong><small>25 dk odak • +5 puan</small><div class="progress-line"><i></i></div></div>
+   <div class="art-card card-scene"><div class="scene-top"><span>🌿 ÇİFTLİĞİM</span><span>☀️</span></div><div class="scene-image"><img src="./media/bahce.webp" alt="Can Suyu çiftliğinde bütün bir meyve bahçesi" width="607" height="1080"></div><div class="scene-caption">Her gün biraz daha büyüyor 🌻</div></div>
+   <div class="art-card card-creature"><img src="./media/kedi.webp" alt="Çiftliğin turuncu kedisi" width="640" height="640"><span>Merhaba!<br><b>Sen geldin 🧡</b></span></div>
+   <div class="art-badge">✦ YENİ BİR GÜN,<br> YENİ BİR FİLİZ</div>
+  </div>
+ </div>
+ <div class="home-bottom"><span>🌈 Sıkıcı bir görev listesi değil, senin dünyan.</span><button id="surprise" type="button" class="surprise-button">Bugün nasıl hissediyorsun? <span>✨</span></button></div>
+</section>
+
+<section class="view app-view" data-view="uygulama" aria-labelledby="app-title" hidden>
+ <div class="view-heading"><span class="pill pill-blue">📚 PLAN · ODAK · İLERLE</span><h2 id="app-title">Gününü sen yaz.<br><span class="blue-text">Can Suyu renklendirsin.</span></h2><p>Planını oluştur, odaklanmaya başla, ne kadar yol aldığını gör. Aşağıdaki kartlara dokunup içini keşfet.</p></div>
+ <div class="app-board">
+   <div class="app-tabs" role="tablist" aria-label="Uygulama önizlemesi">
+     <button type="button" class="app-tab selected" role="tab" id="app-tab-plan" aria-selected="true" aria-controls="app-panel-plan" data-app-tab="plan">🗓️ Planım</button>
+     <button type="button" class="app-tab" role="tab" id="app-tab-focus" aria-selected="false" aria-controls="app-panel-focus" tabindex="-1" data-app-tab="focus">⏱️ Pomodoro</button>
+     <button type="button" class="app-tab" role="tab" id="app-tab-progress" aria-selected="false" aria-controls="app-panel-progress" tabindex="-1" data-app-tab="progress">🏆 İlerlemem</button>
+   </div>
+   <div class="app-panel plan-panel" id="app-panel-plan" role="tabpanel" aria-labelledby="app-tab-plan">
+     <div class="panel-intro"><span>PERŞEMBE · BUGÜN</span><strong>Küçük adımların takvimi.</strong><small>Temsili uygulama önizlemesi</small></div>
+     <div class="day-columns"><div class="day-date"><strong>28</strong><span>EYLÜL</span><i>☀️</i></div><div class="schedule"><div class="schedule-item green"><span>09:00</span><b>🌱 Güne başla</b><small>Tamamlandı ✓</small></div><div class="schedule-item orange"><span>10:30</span><b>📖 Ders zamanı</b><small>25 dakika odak</small></div><div class="schedule-item purple"><span>11:15</span><b>🍊 Bir mola ver</b><small>Kendine zaman ayır</small></div></div></div>
+   </div>
+   <div class="app-panel focus-panel" id="app-panel-focus" role="tabpanel" aria-labelledby="app-tab-focus" hidden>
+     <div class="focus-copy"><span>ODAK DENEMESİ</span><h3>Şimdi sadece<br>bu ana bak.</h3><p>20 saniyelik kısa bir tanıtım sayacı. Uygulamadaki gerçek Pomodoro oturumlarının yerini almaz.</p><button type="button" class="btn btn-dark" id="focus-toggle">Denemeyi başlat ▶</button></div><div class="focus-clock" aria-label="Odak denemesi sayacı"><div><strong id="focus-time">00:20</strong><small id="focus-state">Hazır mısın?</small></div></div>
+   </div>
+   <div class="app-panel progress-panel" id="app-panel-progress" role="tabpanel" aria-labelledby="app-tab-progress" hidden><div class="progress-copy"><span>EMEĞİNİ GÖR</span><h3>Her dakika<br>bir iz bırakır.</h3><p>Çalıştığın süreyi, tamamlanan etkinliklerini ve çiftliğinin nasıl büyüdüğünü tek yerde izle.</p></div><div class="chart-card" aria-label="Temsili bir haftalık çalışma grafiği"><div class="chart-title">BU HAFTAN <span>↗</span></div><div class="bars"><span style="--h:42%"></span><span style="--h:68%"></span><span style="--h:50%"></span><span style="--h:88%"></span><span style="--h:61%"></span><span style="--h:100%"></span><span style="--h:74%"></span></div><div class="bar-labels"><span>P</span><span>S</span><span>Ç</span><span>P</span><span>C</span><span>C</span><span>P</span></div><small>Bu grafik örnek veridir.</small></div></div>
+ </div>
+ <div class="feature-strip"><span>✳ Derslerini planla</span><span>◷ Odak oturumu aç</span><span>🏅 İlerlemeni gör</span><span>☀️ Kendi hızında yaşa</span></div>
+</section>
+
+<section class="view farm-view" data-view="ciftlik" aria-labelledby="farm-title" hidden>
+ <div class="farm-layout">
+  <div class="farm-text"><span class="pill pill-pink">🌼 EMEĞİNİN GİTTİĞİ YER</span><h2 id="farm-title">Çalıştıkça<br><span class="pink-text">filizlenen</span><br>bir dünya.</h2><p>Kazandığın puanlarla ağaçlar yetiştir, hayvanlarla tanış ve her seferinde dönmek isteyeceğin bir yer kur.</p><div class="water-box"><div><strong>Bahçeye biraz su ver 💧</strong><small>Siteye özel bir tanıtım oyuncağı: kayıt tutulmaz.</small></div><button id="water-button" type="button">Su ver <span>+1</span></button></div><div id="water-count" class="water-count" role="status" aria-live="polite">Bugün 0 damla su verdin.</div></div>
+  <div class="farm-canvas"><div class="farm-sun" aria-hidden="true">☀️</div><div class="farm-cloud cloud-one" aria-hidden="true">☁</div><div class="farm-cloud cloud-two" aria-hidden="true">☁</div><div class="farm-hills" aria-hidden="true"></div><div class="farm-ground" aria-hidden="true"></div><img class="farm-tree" id="farm-tree" src="./media/agac.webp" alt="Meyveli bir ağaç" width="640" height="640"><img class="farm-cat" src="./media/kedi.webp" alt="Çiftlikte bir kedi" width="640" height="640"><div class="farm-sign">Benim küçük<br>çiftliğim ✿</div><div class="water-drop" id="water-drop" aria-hidden="true">💧</div><div class="farm-spark spark-one" aria-hidden="true">✳</div><div class="farm-spark spark-two" aria-hidden="true">✿</div></div>
+ </div>
+ <div class="farm-gallery"><button type="button" class="gallery-tile"><img src="./media/hayvanlar.webp" alt="Can Suyu çiftliğinde hayvanların bulunduğu manzara" loading="lazy" width="607" height="1080"><strong>Hayvanlarla tanış 🐾</strong></button><button type="button" class="gallery-tile"><img src="./media/pazar.webp" alt="Renkli çiftlik pazarı" loading="lazy" width="607" height="1080"><strong>Dünyanı genişlet 🏡</strong></button><button type="button" class="gallery-tile"><img src="./media/bahce.webp" alt="Meyve bahçesi manzarası" loading="lazy" width="607" height="1080"><strong>Kendi bahçeni büyüt 🍎</strong></button></div>
+</section>
+
+<section class="view games-view" data-view="oyunlar" aria-labelledby="games-title" hidden>
+ <div class="games-layout"><div><span class="pill pill-lavender">🎮 MOLA VAKTİ!</span><h2 id="games-title">Odağını topla.<br><span class="purple-text">Biraz da oyna.</span></h2><p>Can Suyu'nda mola da planın bir parçası. Mini oyunları tanımak için aşağıdaki hafıza denemesini oyna; gerçek oyunlar Android uygulamasında.</p><div class="game-list"><span>🏰 Fidan Kule</span><span>🍎 Meyve Yakalama</span><span>🃏 Hafıza Bahçesi</span><span>🌲 Fidan 2048</span></div></div>
+ <div class="memory-shell"><div class="memory-head"><div><span>🃏 MİNİ DENEME</span><strong>Hafıza Bahçesi</strong></div><button type="button" id="game-reset" aria-label="Hafıza oyununu yeniden başlat">↻ Yeni oyun</button></div><div id="memory-grid" class="memory-grid" aria-label="Altı kartlık hafıza oyunu"></div><p id="game-status" role="status" aria-live="polite">Kartları çevirip üç çifti eşleştir!</p></div></div>
+</section>
+
+<section class="view contact-view" data-view="iletisim" aria-labelledby="contact-title" hidden><div class="contact-layout"><div class="contact-left"><span class="pill pill-sun">💌 BİR MERHABA BIRAK</span><h2 id="contact-title">Birlikte<br><span class="pink-text">büyütelim.</span></h2><p>Fikrini, sorunu veya Can Suyu için düşündüğün bir şeyi paylaş. E-posta gönderebilir ya da Instagram'dan yazabilirsin.</p><div class="contact-methods"><a class="contact-method contact-mail" href="mailto:cansuyuapp@gmail.com" aria-label="cansuyuapp@gmail.com adresine e-posta gönder"><span class="method-icon" aria-hidden="true">✉️</span><span class="method-text"><small>GMAIL</small><strong>cansuyuapp@gmail.com</strong></span><span class="method-arrow" aria-hidden="true">↗</span></a><a class="contact-method contact-instagram" href="https://www.instagram.com/cansuyuapp/" target="_blank" rel="noopener noreferrer" aria-label="Can Suyu Instagram hesabını aç: cansuyuapp"><span class="method-icon" aria-hidden="true">📸</span><span class="method-text"><small>INSTAGRAM</small><strong>@cansuyuapp</strong></span><span class="method-arrow" aria-hidden="true">↗</span></a></div></div><div class="contact-art" aria-hidden="true"><span>💌</span><div>Bir fikrin mi var?<br><b>Duymak isteriz!</b></div><img src="./media/kedi.webp" alt="" width="640" height="640"></div></div><div class="questions"><h3>Merak edilenler ✳</h3><details><summary>Can Suyu nerede kullanılacak? <span>+</span></summary><p>Can Suyu Android uygulaması olarak hazırlanıyor. Bu site uygulamayı tanıtır.</p></details><details><summary>Şimdi indirilebilir mi? <span>+</span></summary><p>Henüz Google Play'de yayımlanmadı. Yayımlanınca indirme bağlantısı burada görünecek.</p></details><details><summary>Web sitesinde hesap açabilir miyim? <span>+</span></summary><p>Bu tanıtım sitesinde hesap ve kayıt tutulmaz. Çalışma planı, çiftlik ve gerçek mini oyunlar Android uygulamasındadır.</p></details></div></section>
+
+<section class="view store-view" data-view="indir" aria-labelledby="store-title" hidden><div class="store-layout"><div class="store-copy"><span class="pill pill-blue">📱 ANDROID UYGULAMASI</span><h2 id="store-title">Başlamak için<br>bir <span class="blue-text">gün</span> yeter.</h2><p>Can Suyu yakında Google Play'de. Mağaza sayfası henüz yayımlanmadığı için burada sahte bir indirme düğmesi yok. Yayınlandığında doğrudan uygulamaya giden bağlantı gelecek.</p><div class="soon-card" role="status"><span>▶</span><div><small>GOOGLE PLAY</small><strong>Çok yakında</strong></div><i>✦</i></div><a href="#uygulama" class="inline-link">Bu sırada uygulamayı keşfet ↗</a></div><div class="store-art"><div class="store-halo"></div><div class="store-orbit"><span>✦</span><span>✳</span><span>✦</span></div><img src="./media/agac.webp" alt="Meyveleri olan Can Suyu ağacı" width="640" height="640"><div class="store-mini">💧 Bir adım, bir filiz.</div></div></div></section>
+</main>
+<footer class="site-footer"><span>💧 <b>cansuyu</b> · Sen çalıştıkça büyür.</span><span>© <span id="year">2026</span> Can Suyu</span><a href="#iletisim">Bize yaz ↗</a></footer>
+<nav class="mobile-dock" aria-label="Hızlı gezinme"><a href="#anasayfa" data-nav="anasayfa">🏡<small>Başla</small></a><a href="#uygulama" data-nav="uygulama">📚<small>Uygulama</small></a><a href="#ciftlik" data-nav="ciftlik">🌳<small>Çiftlik</small></a><a href="#oyunlar" data-nav="oyunlar">🎮<small>Oyun</small></a><a href="#indir" data-nav="indir">▶<small>İndir</small></a></nav>
+<div id="confetti-layer" aria-hidden="true"></div>
+<dialog id="gallery-dialog" class="gallery-dialog" aria-label="Çiftlik görseli"><button id="gallery-close" type="button" aria-label="Görseli kapat">✕</button><img id="gallery-full" alt="" width="607" height="1080"><p id="gallery-caption"></p></dialog>
+<script src="./site.js" defer></script>
+</body>
+</html>
